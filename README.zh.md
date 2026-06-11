@@ -1,5 +1,13 @@
 # RobustPick · 稳择
 
+**🖥️ 在线使用（不用安装，打开即用）：**
+- 🇨🇳 中文原版：https://nianyufanshen.github.io/choicecalc/
+- 🌐 英文双语版：https://nianyufanshen.github.io/choicecalc/bilingual/
+
+> **不用下载、不用安装、不用敲命令。** 点上面链接直接在浏览器里用。
+
+---
+
 **蒙特卡洛决策模拟器 —— 做决定之前，先抖一抖，看谁站得住。**
 
 > 不是算分工具，是稳健性测试器。
@@ -118,22 +126,25 @@ RobustPick 模拟 **10,000+ 次**——你的权重和评分在你设定的不�
 
 ## 快速开始
 
+**👉 在线直接用（推荐，零安装）：**
+- https://nianyufanshen.github.io/choicecalc/
+- https://nianyufanshen.github.io/choicecalc/bilingual/
+
+**本地运行（开发者）：**
+
 ```bash
-git clone https://github.com/YOUR_USER/robust-pick.git
-cd robust-pick
+git clone https://github.com/nianyufanshen/choicecalc.git
+cd choicecalc
 
 # 方法 1：任意 HTTP 服务器
 python -m http.server 8000
 # 打开 http://localhost:8000
 
-# 方法 2：VS Code Live Server
-# 右键 index.html → Open with Live Server
-
-# 方法 3：直接打开（基础功能）
-# 浏览器打开 index.html 即可
+# 方法 2：直接双击文件
+# 在文件管理器里双击 index.html 即可
 ```
 
-**无需构建步骤，无需安装依赖。** 纯静态文件，一个 HTTP 服务器就够了。
+**无需构建步骤，无需安装依赖。** 纯静态文件，打开即用。
 
 **外部依赖**：ECharts（`lib/echarts.min.js`，已内置）
 
