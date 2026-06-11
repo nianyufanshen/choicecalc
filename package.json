@@ -1,0 +1,10 @@
+{
+  "name": "robust-pick",
+  "version": "1.0.0",
+  "description": "Monte Carlo decision simulator — stress-test your choices before you make them",
+  "keywords": ["monte-carlo", "decision-making", "smaa", "multi-criteria", "robustness"],
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
