@@ -1,5 +1,14 @@
 # RobustPick · 稳择
 
+**🖥️ 在线使用 / Use it live:**
+- 🌐 English: https://nianyufanshen.github.io/choicecalc/bilingual/
+- 🇨🇳 中文原版：https://nianyufanshen.github.io/choicecalc/
+
+> 不用安装、不用下载，打开链接直接用。
+> No install, no setup — just open and use.
+
+---
+
 **Monte Carlo decision simulator — stress-test your choices before you make them.**
 
 > Not a scoring calculator. A robustness tester.
@@ -113,22 +122,25 @@ A **dedicated cache layer** ensures that overlapping MC computations across path
 
 ## Quick Start
 
+**👉 在线直接用（推荐）：**
+- https://nianyufanshen.github.io/choicecalc/
+- https://nianyufanshen.github.io/choicecalc/bilingual/
+
+**本地运行（开发者）：**
+
 ```bash
-git clone https://github.com/YOUR_USER/robust-pick.git
-cd robust-pick
+git clone https://github.com/nianyufanshen/choicecalc.git
+cd choicecalc
 
 # Option 1: Any HTTP server
 python -m http.server 8000
 # Open http://localhost:8000
 
-# Option 2: VS Code Live Server
-# Right-click index.html → Open with Live Server
-
-# Option 3: Direct file open (basic)
-# Just open index.html in a browser
+# Option 2: Just open the file directly
+# Double-click index.html in your file explorer
 ```
 
-**No build step. No dependencies to install.** Just serve the directory.
+**No build step. No dependencies to install.** Just open and use.
 
 **External dependency**: ECharts (loaded via CDN fallback from `lib/echarts.min.js`)
 
@@ -150,11 +162,14 @@ python -m http.server 8000
 ## Project Structure
 
 ```
-robust-pick/
-├── index.html          # Single-page app (all CSS + HTML)
-├── app.js              # All application logic (~1500 lines)
+choicecalc/
+├── index.html          # 中文版入口
+├── app.js              # 中文版逻辑
+├── bilingual/
+│   ├── index.html      # 英文版入口
+│   └── app.js          # 英文版逻辑（含中英切换）
 ├── lib/
-│   └── echarts.min.js  # ECharts 5 (pie chart)
+│   └── echarts.min.js  # ECharts 5 图表库
 └── screenshot.png
 ```
 
